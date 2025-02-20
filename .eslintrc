@@ -1,0 +1,37 @@
+{
+    // "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "rules": {
+        "no-console": 1,
+        "prettier/prettier": [
+            "error",
+            {},
+            {
+                "usePrettierrc": true
+            }
+        ],
+        "no-restricted-imports": [
+            "error",
+            {}
+        ],
+        // Remove below after initial setup
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/ban-ts-comment": "warn"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "ignorePatterns": [
+        "tests"
+    ]
+}
