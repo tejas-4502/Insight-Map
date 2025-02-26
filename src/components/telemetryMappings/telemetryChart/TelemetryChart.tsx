@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import './telemetryChart.css'
 
 const TelemetryChart = () => {
     const svgRef = useRef<SVGSVGElement | null>(null)
